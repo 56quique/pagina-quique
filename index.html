@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FTI Misiones - Formación Técnica Industrial</title>
+<title>FTI Misiones - Capacitación Técnica Industrial In Company</title>
 
 <style>
 body{
@@ -13,34 +13,39 @@ body{
     color:white;
 }
 
-header{
-    text-align:center;
-    padding:60px 20px;
+.topbar{
+    display:flex;
+    align-items:center;
+    padding:20px 40px;
+    background:#0d1b2a;
 }
 
-.logo-img{
-    max-width:220px;
-    width:80%;
-    margin-bottom:30px;
+.logo{
+    max-width:180px;
 }
 
-h1{
-    font-size:32px;
-    margin-bottom:15px;
+.hero{
+    padding:80px 40px;
+    max-width:900px;
 }
 
-p{
-    font-size:18px;
-    max-width:600px;
-    margin:auto;
+.hero h1{
+    font-size:38px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    max-width:700px;
+    line-height:1.6;
     opacity:0.9;
 }
 
 .btn{
     display:inline-block;
-    margin-top:30px;
-    padding:15px 35px;
-    background:#25D366;
+    margin-top:35px;
+    padding:16px 35px;
+    background:#f77f00;
     color:white;
     text-decoration:none;
     font-weight:bold;
@@ -53,31 +58,39 @@ p{
 }
 
 section{
-    padding:70px 20px;
-    text-align:center;
+    padding:70px 40px;
+    max-width:1000px;
 }
 
-.cards{
+h2{
+    font-size:28px;
+    margin-bottom:20px;
+    color:#f77f00;
+}
+
+.programs{
     display:flex;
     flex-wrap:wrap;
-    justify-content:center;
     gap:30px;
     margin-top:40px;
 }
 
-.card{
+.program{
     background:#1b263b;
     padding:30px;
     border-radius:15px;
-    width:280px;
+    flex:1;
+    min-width:260px;
 }
 
-.card h3{
-    color:#f77f00;
+.program h3{
+    margin-top:0;
+    color:white;
 }
 
 .cta{
     background:#1b263b;
+    padding:80px 40px;
 }
 
 .footer{
@@ -108,60 +121,74 @@ section{
 
 <body>
 
-<header>
-    <img src="logo.png" alt="FTI Misiones Logo" class="logo-img">
+<div class="topbar">
+    <img src="logo.png" alt="FTI Misiones Logo" class="logo">
+</div>
 
-    <h1>Capacitación Técnica Industrial Aplicada</h1>
+<div class="hero">
+    <h1>Capacitación Técnica Industrial In-Company</h1>
     <p>
-        Formación práctica en electricidad y automatización para técnicos e industrias de Misiones.
+        Diseñamos e implementamos programas de formación técnica directamente en las instalaciones de su empresa,
+        adaptados al nivel del personal y a la realidad operativa de cada planta industrial.
     </p>
 
-    <a class="btn" href="https://wa.me/5493743553489?text=Hola%2C%20quiero%20recibir%20informaci%C3%B3n%20sobre%20la%20formaci%C3%B3n%20FTI%20Misiones" target="_blank">
-        Solicitar información por WhatsApp
+    <a class="btn" href="https://wa.me/5493743553489?text=Hola%2C%20quisiera%20coordinar%20una%20reuni%C3%B3n%20para%20evaluar%20capacitaci%C3%B3n%20t%C3%A9cnica%20in-company" target="_blank">
+        Coordinar reunión técnica
     </a>
-</header>
+</div>
 
 <section>
-    <h2>¿Qué ofrecemos?</h2>
+    <h2>Enfoque</h2>
+    <p>
+        No ofrecemos cursos genéricos. Realizamos una reunión inicial con responsables técnicos,
+        evaluamos necesidades reales y diseñamos módulos personalizados orientados a seguridad,
+        eficiencia operativa y reducción de fallas eléctricas.
+    </p>
+</section>
 
-    <div class="cards">
-        <div class="card">
-            <h3>Arranque de motores</h3>
-            <p>Práctica real con tableros, protecciones y maniobras industriales.</p>
+<section>
+    <h2>Líneas de Capacitación</h2>
+
+    <div class="programs">
+        <div class="program">
+            <h3>Nivel 1 – Seguridad Eléctrica para Operarios</h3>
+            <p>
+                Concientización sobre riesgos eléctricos, límites de intervención,
+                protecciones y buenas prácticas en entornos industriales.
+            </p>
         </div>
 
-        <div class="card">
-            <h3>Automatización industrial</h3>
-            <p>Diseño y conexión de circuitos de mando y potencia aplicados.</p>
+        <div class="program">
+            <h3>Nivel 2 – Mantenimiento Eléctrico Industrial</h3>
+            <p>
+                Mejora de prácticas de mantenimiento, diagnóstico sistemático de fallas,
+                interpretación de tableros y optimización preventiva.
+            </p>
         </div>
 
-        <div class="card">
-            <h3>Diagnóstico y eficiencia</h3>
-            <p>Análisis de fallas, seguridad eléctrica y mejora operativa.</p>
+        <div class="program">
+            <h3>Nivel 3 – Especialización en Automatización</h3>
+            <p>
+                Formación técnica específica en sensores industriales,
+                automatización, lógica de control y diagnóstico de sistemas automatizados.
+            </p>
         </div>
     </div>
 </section>
 
-<section>
-    <h2>¿A quién está dirigido?</h2>
-    <p>
-        Técnicos industriales, personal de mantenimiento y empresas que buscan reducir fallas, mejorar la seguridad y aumentar la eficiencia operativa.
-    </p>
-</section>
-
 <section class="cta">
-    <h2>La diferencia entre saber y hacer está en la práctica.</h2>
+    <h2>Capacitación técnica para una industria más segura, eficiente y sostenible.</h2>
 
-    <a class="btn" href="https://wa.me/5493743553489?text=Hola%2C%20quiero%20recibir%20informaci%C3%B3n%20sobre%20la%20formaci%C3%B3n%20FTI%20Misiones" target="_blank">
-        Contactar ahora
+    <a class="btn" href="https://wa.me/5493743553489?text=Hola%2C%20quiero%20recibir%20informaci%C3%B3n%20sobre%20capacitaci%C3%B3n%20in-company" target="_blank">
+        Solicitar información
     </a>
 </section>
 
 <div class="footer">
-    © 2026 FTI Misiones - Formación Técnica Industrial
+    © 2026 FTI Misiones - Capacitación Técnica Industrial
 </div>
 
-<a class="whatsapp-float" href="https://wa.me/5493743553489?text=Hola%2C%20quiero%20recibir%20informaci%C3%B3n%20sobre%20la%20formaci%C3%B3n%20FTI%20Misiones" target="_blank">
+<a class="whatsapp-float" href="https://wa.me/5493743553489?text=Hola%2C%20quisiera%20informaci%C3%B3n%20sobre%20capacitaci%C3%B3n%20in-company" target="_blank">
     ☎
 </a>
 

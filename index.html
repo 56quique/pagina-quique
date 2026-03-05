@@ -3,194 +3,177 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FTI Misiones - Capacitación Técnica Industrial In Company</title>
+<title>Formación Técnica Industrial - Misiones</title>
 
 <style>
+
 body{
     margin:0;
     font-family: Arial, Helvetica, sans-serif;
-    background:#0d1b2a;
-    color:white;
+    background-color:#0e1a2b;
+    color:#ffffff;
 }
 
-.topbar{
+/* HEADER */
+header{
     display:flex;
     align-items:center;
-    padding:20px 40px;
-    background:#0d1b2a;
+    justify-content:flex-start;
+    padding:20px 8%;
+    background:#0b1524;
 }
 
-.logo{
-    max-width:180px;
+header img{
+    height:70px;
+    margin-right:20px;
 }
 
+header h1{
+    font-size:22px;
+    font-weight:600;
+    margin:0;
+}
+
+/* HERO */
 .hero{
-    padding:80px 40px;
-    max-width:900px;
+    text-align:center;
+    padding:50px 10% 40px 10%;
 }
 
-.hero h1{
-    font-size:38px;
-    margin-bottom:20px;
+.hero h2{
+    font-size:36px;
+    margin-bottom:15px;
+    color:#ff7a00;
 }
 
 .hero p{
-    font-size:20px;
-    max-width:700px;
+    font-size:18px;
+    max-width:800px;
+    margin:0 auto 25px auto;
     line-height:1.6;
-    opacity:0.9;
 }
 
-.btn{
+.boton{
     display:inline-block;
-    margin-top:35px;
-    padding:16px 35px;
-    background:#f77f00;
-    color:white;
+    padding:14px 28px;
+    background:#ff7a00;
+    color:#ffffff;
     text-decoration:none;
+    border-radius:30px;
     font-weight:bold;
-    border-radius:40px;
     transition:0.3s;
 }
 
-.btn:hover{
-    opacity:0.85;
+.boton:hover{
+    background:#e86d00;
 }
 
+/* SECCIONES */
 section{
-    padding:70px 40px;
-    max-width:1000px;
+    padding:50px 10%;
+    text-align:center;
 }
 
-h2{
+section h3{
     font-size:28px;
     margin-bottom:20px;
-    color:#f77f00;
+    color:#ff7a00;
 }
 
-.programs{
-    display:flex;
-    flex-wrap:wrap;
-    gap:30px;
-    margin-top:40px;
+section p{
+    max-width:800px;
+    margin:0 auto 20px auto;
+    line-height:1.7;
 }
 
-.program{
-    background:#1b263b;
-    padding:30px;
-    border-radius:15px;
-    flex:1;
-    min-width:260px;
+/* LISTA */
+ul{
+    list-style:none;
+    padding:0;
+    max-width:700px;
+    margin:0 auto;
 }
 
-.program h3{
-    margin-top:0;
-    color:white;
+ul li{
+    padding:10px 0;
+    border-bottom:1px solid rgba(255,255,255,0.1);
 }
 
-.cta{
-    background:#1b263b;
-    padding:80px 40px;
-}
-
-.footer{
+/* FOOTER */
+footer{
     text-align:center;
     padding:30px;
-    background:#000814;
+    background:#0b1524;
     font-size:14px;
 }
 
-.whatsapp-float{
-    position:fixed;
-    bottom:20px;
-    right:20px;
-    background:#25D366;
-    color:white;
-    width:60px;
-    height:60px;
-    border-radius:50%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-size:26px;
-    text-decoration:none;
-    box-shadow:0 4px 10px rgba(0,0,0,0.4);
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+    text-align:center;
 }
+
+header img{
+    margin-bottom:10px;
+}
+
+.hero h2{
+    font-size:28px;
+}
+
+}
+
 </style>
 </head>
 
 <body>
 
-<div class="topbar">
-    <img src="logo.png" alt="FTI Misiones Logo" class="logo">
-</div>
+<header>
+    <img src="logo1.png" alt="Formación Técnica Industrial">
+    <h1>Formación Técnica Industrial</h1>
+</header>
 
-<div class="hero">
-    <h1>Capacitación Técnica Industrial In-Company</h1>
+<section class="hero">
+    <h2>Capacitación Técnica Industrial In-Company</h2>
     <p>
-        Diseñamos e implementamos programas de formación técnica directamente en las instalaciones de su empresa,
-        adaptados al nivel del personal y a la realidad operativa de cada planta industrial.
+        Programas de formación técnica diseñados específicamente para las necesidades reales de su empresa. 
+        Evaluación, diagnóstico y capacitación aplicada directamente en planta.
     </p>
-
-    <a class="btn" href="https://wa.me/5493743553489?text=Hola%2C%20quisiera%20coordinar%20una%20reuni%C3%B3n%20para%20evaluar%20capacitaci%C3%B3n%20t%C3%A9cnica%20in-company" target="_blank">
-        Coordinar reunión técnica
-    </a>
-</div>
-
-<section>
-    <h2>Enfoque</h2>
-    <p>
-        No ofrecemos cursos genéricos. Realizamos una reunión inicial con responsables técnicos,
-        evaluamos necesidades reales y diseñamos módulos personalizados orientados a seguridad,
-        eficiencia operativa y reducción de fallas eléctricas.
-    </p>
-</section>
-
-<section>
-    <h2>Líneas de Capacitación</h2>
-
-    <div class="programs">
-        <div class="program">
-            <h3>Nivel 1 – Seguridad Eléctrica para Operarios</h3>
-            <p>
-                Concientización sobre riesgos eléctricos, límites de intervención,
-                protecciones y buenas prácticas en entornos industriales.
-            </p>
-        </div>
-
-        <div class="program">
-            <h3>Nivel 2 – Mantenimiento Eléctrico Industrial</h3>
-            <p>
-                Mejora de prácticas de mantenimiento, diagnóstico sistemático de fallas,
-                interpretación de tableros y optimización preventiva.
-            </p>
-        </div>
-
-        <div class="program">
-            <h3>Nivel 3 – Especialización en Automatización</h3>
-            <p>
-                Formación técnica específica en sensores industriales,
-                automatización, lógica de control y diagnóstico de sistemas automatizados.
-            </p>
-        </div>
-    </div>
-</section>
-
-<section class="cta">
-    <h2>Capacitación técnica para una industria más segura, eficiente y sostenible.</h2>
-
-    <a class="btn" href="https://wa.me/5493743553489?text=Hola%2C%20quiero%20recibir%20informaci%C3%B3n%20sobre%20capacitaci%C3%B3n%20in-company" target="_blank">
-        Solicitar información
+    <a class="boton" href="https://wa.me/543743553489" target="_blank">
+        Solicitar reunión técnica por WhatsApp
     </a>
 </section>
 
-<div class="footer">
-    © 2026 FTI Misiones - Capacitación Técnica Industrial
-</div>
+<section>
+    <h3>Enfoque</h3>
+    <p>
+        No ofrecemos cursos genéricos. Diseñamos programas adaptados a la realidad eléctrica y operativa de cada industria.
+        Cada capacitación comienza con una reunión técnica y diagnóstico previo.
+    </p>
+</section>
 
-<a class="whatsapp-float" href="https://wa.me/5493743553489?text=Hola%2C%20quisiera%20informaci%C3%B3n%20sobre%20capacitaci%C3%B3n%20in-company" target="_blank">
-    ☎
-</a>
+<section>
+    <h3>Líneas de Capacitación</h3>
+    <ul>
+        <li>Seguridad eléctrica para operarios</li>
+        <li>Mantenimiento eléctrico industrial</li>
+        <li>Automatización y sistemas de control</li>
+        <li>Optimización de prácticas técnicas en planta</li>
+    </ul>
+</section>
+
+<section>
+    <h3>Metodología</h3>
+    <p>
+        Reunión inicial con responsables técnicos → Evaluación del nivel del personal →
+        Diseño de módulos personalizados → Implementación en las instalaciones reales.
+    </p>
+</section>
+
+<footer>
+    Contacto: 3743-553489 | Formación Técnica Industrial
+</footer>
 
 </body>
 </html>

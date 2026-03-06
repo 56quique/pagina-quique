@@ -3,217 +3,328 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Energía Inteligente</title>
+
+<title>FTI Misiones - Formación Técnica Industrial</title>
 
 <style>
 
 body{
-    margin:0;
-    font-family: Arial, Helvetica, sans-serif;
-    background:#ffffff;
-    color:#333;
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#0e1a2b;
+color:white;
 }
 
-/* Encabezado */
+/* HEADER */
 
 header{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:30px;
-    padding:30px 20px;
-    border-bottom:3px solid #2bb673;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:25px 8%;
+background:#0b1524;
+border-bottom:2px solid #00b37e;
 }
 
-/* Logo */
-
-.logo{
-    width:120px;
+header img{
+height:100px;   /* LOGO MÁS GRANDE */
+margin-right:20px;
+border-radius:10px;
 }
 
-/* Título */
-
-.header-text{
-    text-align:center;
+header h1{
+margin:0;
+font-size:26px;
 }
 
-h1{
-    margin:0;
-    font-size:36px;
-    color:#1f7a63;
+/* HERO */
+
+.hero{
+text-align:center;
+padding:60px 10%;
 }
 
-.subtitulo{
-    font-size:18px;
-    margin-top:5px;
+.hero h2{
+font-size:36px;
+color:#ff7a00;
+margin-bottom:15px;
 }
 
-/* Secciones */
+.hero p{
+max-width:800px;
+margin:auto;
+line-height:1.6;
+margin-bottom:25px;
+}
+
+/* BOTON */
+
+.boton{
+display:inline-block;
+padding:14px 28px;
+background:#ff7a00;
+border-radius:30px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+}
+
+.boton:hover{
+background:#e86d00;
+}
+
+/* SECCIONES */
 
 section{
-    max-width:900px;
-    margin:auto;
-    padding:40px 20px;
-    text-align:center;
+padding:60px 10%;
+text-align:center;
+position:relative;
 }
 
-h2{
-    color:#1f7a63;
-    margin-bottom:15px;
-    position:relative;
+/* LINEA VERDE SUTIL */
+
+section::after{
+content:"";
+position:absolute;
+bottom:0;
+left:50%;
+transform:translateX(-50%);
+width:120px;
+height:2px;
+background:#00b37e;
+opacity:0.35;
 }
 
-h2:after{
-    content:"";
-    width:60px;
-    height:3px;
-    background:#2bb673;
-    display:block;
-    margin:10px auto 0;
+section h3{
+color:#ff7a00;
+font-size:28px;
+margin-bottom:20px;
 }
 
-/* Servicios */
-
-.servicios{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:30px;
-    margin-top:30px;
+section p{
+max-width:800px;
+margin:auto;
+line-height:1.7;
+margin-bottom:20px;
 }
 
-.servicio{
-    border:1px solid #e5e5e5;
-    border-left:4px solid #2bb673;
-    padding:20px;
-    border-radius:6px;
-    background:#fafafa;
+/* LISTAS */
+
+ul{
+list-style:none;
+padding:0;
+max-width:700px;
+margin:auto;
 }
 
-/* Contacto */
-
-.contacto{
-    background:#f6fdf9;
-    border-top:3px solid #2bb673;
+ul li{
+padding:12px 0;
+border-bottom:1px solid rgba(255,255,255,0.1);
 }
 
-.whatsapp{
-    display:inline-block;
-    margin-top:20px;
-    padding:14px 28px;
-    background:#2bb673;
-    color:white;
-    text-decoration:none;
-    font-weight:bold;
-    border-radius:6px;
+/* TARJETAS INDUSTRIAS */
+
+.industrias{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+max-width:900px;
+margin:30px auto;
 }
 
-/* Responsive */
+.card{
+background:#1b263b;
+padding:25px;
+border-radius:12px;
+border:1px solid rgba(0,179,126,0.3);
+transition:0.3s;
+}
 
-@media(max-width:700px){
+.card:hover{
+transform:translateY(-4px);
+border-color:#00b37e;
+}
+
+.card h4{
+margin:0;
+font-size:18px;
+}
+
+/* RESPONSABLE */
+
+.responsable{
+background:#0b1524;
+border-top:2px solid #00b37e;
+border-bottom:2px solid #00b37e;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:30px;
+background:#0b1524;
+font-size:14px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
 
 header{
-    flex-direction:column;
+flex-direction:column;
+text-align:center;
 }
 
-.servicios{
-    grid-template-columns:1fr;
+header img{
+margin-right:0;
+margin-bottom:10px;
+}
+
+.hero h2{
+font-size:28px;
 }
 
 }
 
 </style>
-
 </head>
 
 <body>
 
 <header>
 
-<img src="logo.png" class="logo">
+<img src="logo1.png" alt="FTI Misiones">
 
-<div class="header-text">
-<h1>Energía Inteligente</h1>
-<div class="subtitulo">Servicios de Eficiencia Energética Industrial</div>
-</div>
+<h1>Formación Técnica Industrial</h1>
 
 </header>
 
 
-<section>
+<section class="hero">
 
-<h2>Quién soy</h2>
-
-<p>
-Soy técnico especializado en instalaciones eléctricas industriales y optimización energética.
-Trabajo ayudando a empresas y comercios a mejorar el uso de la energía, detectar
-ineficiencias y aplicar soluciones prácticas que reduzcan costos y mejoren la
-confiabilidad de las instalaciones.
-</p>
-
-</section>
-
-
-<section>
-
-<h2>Servicios</h2>
-
-<div class="servicios">
-
-<div class="servicio">
-<h3>Diagnóstico energético</h3>
-<p>
-Evaluación del consumo eléctrico en instalaciones industriales o comerciales
-para identificar oportunidades de mejora y ahorro energético.
-</p>
-</div>
-
-<div class="servicio">
-<h3>Optimización de instalaciones</h3>
-<p>
-Revisión técnica de tableros, protecciones, distribución eléctrica y
-funcionamiento general de la instalación.
-</p>
-</div>
-
-<div class="servicio">
-<h3>Capacitación técnica</h3>
-<p>
-Capacitaciones prácticas sobre instalaciones eléctricas industriales
-y seguridad eléctrica, coordinadas directamente con las empresas.
-</p>
-</div>
-
-<div class="servicio">
-<h3>Asesoramiento técnico</h3>
-<p>
-Acompañamiento para mejorar instalaciones existentes y planificar
-nuevas soluciones eléctricas eficientes.
-</p>
-</div>
-
-</div>
-
-</section>
-
-
-<section class="contacto">
-
-<h2>Contacto</h2>
+<h2>Capacitación Técnica Industrial In-Company</h2>
 
 <p>
-Si querés mejorar la eficiencia energética de tu empresa o coordinar
-una capacitación técnica, podés comunicarte directamente.
+Programas de formación técnica diseñados específicamente para las necesidades reales de su empresa.
+Las capacitaciones se coordinan con responsables técnicos y pueden desarrollarse dentro de las
+instalaciones de la planta.
 </p>
 
-<a class="whatsapp" href="https://wa.me/543743553489" target="_blank">
-Contactar por WhatsApp
+<a class="boton" href="https://wa.me/543743553489?text=Hola%20quisiera%20información%20sobre%20las%20capacitaciones%20industriales%20de%20FTI%20Misiones" target="_blank">
+Solicitar reunión técnica
 </a>
 
-<p style="margin-top:20px;">
-Teléfono: 3743-553489
+</section>
+
+
+<section>
+
+<h3>Enfoque</h3>
+
+<p>
+Cada industria tiene realidades técnicas diferentes. Las capacitaciones se diseñan a partir
+de una reunión inicial donde se evalúan las necesidades de la empresa, el nivel del personal
+y los objetivos operativos que se desean mejorar.
 </p>
 
 </section>
+
+
+<section>
+
+<h3>Líneas de Capacitación</h3>
+
+<ul>
+
+<li>Seguridad eléctrica para operarios</li>
+<li>Mantenimiento eléctrico industrial</li>
+<li>Diagnóstico de fallas en instalaciones eléctricas</li>
+<li>Introducción a automatización industrial</li>
+<li>Buenas prácticas técnicas en mantenimiento</li>
+
+</ul>
+
+</section>
+
+
+<section>
+
+<h3>Industrias a las que está dirigido</h3>
+
+<div class="industrias">
+
+<div class="card">
+<h4>Industria maderera</h4>
+</div>
+
+<div class="card">
+<h4>Aserraderos</h4>
+</div>
+
+<div class="card">
+<h4>Plantas de producción</h4>
+</div>
+
+<div class="card">
+<h4>Empresas con mantenimiento propio</h4>
+</div>
+
+<div class="card">
+<h4>Industrias con maquinaria eléctrica</h4>
+</div>
+
+<div class="card">
+<h4>Empresas con procesos automatizados</h4>
+</div>
+
+</div>
+
+</section>
+
+
+<section>
+
+<h3>Resultados Esperados</h3>
+
+<ul>
+
+<li>Reducción de riesgos eléctricos en planta</li>
+<li>Mayor capacidad de diagnóstico técnico</li>
+<li>Mejores prácticas de mantenimiento</li>
+<li>Personal con mayor criterio técnico</li>
+<li>Mayor eficiencia en intervenciones eléctricas</li>
+
+</ul>
+
+</section>
+
+
+<section class="responsable">
+
+<h3>Responsable Técnico</h3>
+
+<p>
+Las capacitaciones son coordinadas por un profesional con experiencia en instalaciones
+eléctricas industriales, mantenimiento y diagnóstico de sistemas eléctricos.
+</p>
+
+<p>
+El objetivo es transmitir conocimientos aplicables directamente al trabajo real
+del personal técnico y operativo dentro de la industria.
+</p>
+
+</section>
+
+
+<footer>
+
+Contacto directo: 3743-553489  
+<br><br>
+FTI Misiones – Formación Técnica Industrial
+
+</footer>
 
 </body>
 </html>

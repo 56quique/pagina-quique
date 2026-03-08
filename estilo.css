@@ -57,9 +57,17 @@ background:#eeeeee;
 
 .enfoque-container{
 display:grid;
-grid-template-columns:1fr 1fr;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
 gap:40px;
 margin-top:40px;
+}
+.enfoque-box{
+background:white;
+padding:30px;
+border-radius:8px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+text-align:left;
+max-width:100%;
 }
 
 .enfoque-box{

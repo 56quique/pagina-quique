@@ -1,96 +1,151 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Centro de Formación Técnica Industrial Integrada</title>
-<link rel="stylesheet" href="estilo.css">
+
+<link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
 
-<header>
-<nav>
-<h1 class="logo">CFTII</h1>
+<!-- PORTADA -->
 
-<ul class="menu">
-<li><a href="#inicio">Inicio</a></li>
-<li><a href="#enfoque">Enfoque</a></li>
-<li><a href="#areas">Áreas</a></li>
-<li><a href="#modalidad">Modalidad</a></li>
-<li><a href="#contacto">Contacto</a></li>
-</ul>
-</nav>
-</header>
+<section class="hero">
 
-<section id="inicio" class="hero">
-
-<h2>Centro de Formación Técnica Industrial Integrada</h2>
+<h1>Centro de Formación Técnica Industrial Integrada</h1>
 
 <p class="frase">
 Integración de tecnologías para la formación técnica industrial
 </p>
 
-<button onclick="scrollToSection('contacto')">
-Solicitar información
-</button>
+<button onclick="irAContacto()">Solicitar información</button>
 
 </section>
 
-<section id="enfoque" class="section">
 
-<h3>Nuestro Enfoque</h3>
+<!-- ENFOQUE -->
 
-<div class="grid">
+<section class="seccion">
 
-<div class="card">
-<h4>Capacitación especializada</h4>
-<p>Formación técnica en tecnologías industriales específicas como electricidad, neumática, hidráulica y automatización.</p>
+<h2>Enfoque de Formación</h2>
+
+<div class="enfoque-container">
+
+<div class="enfoque-box">
+
+<h3>Capacitación técnica tradicional</h3>
+
+<p>
+Programas orientados al desarrollo de conocimientos en tecnologías industriales específicas.
+</p>
+
+<ul>
+
+<li>Electricidad industrial</li>
+<li>Mecánica industrial</li>
+<li>Neumática</li>
+<li>Hidráulica</li>
+<li>Electrónica industrial</li>
+<li>Automatización</li>
+
+</ul>
+
 </div>
 
-<div class="card">
-<h4>Capacitación integral</h4>
-<p>Programas orientados al análisis del funcionamiento integrado de sistemas industriales.</p>
-</div>
 
-<div class="card">
-<h4>Orientación industrial</h4>
-<p>Capacitaciones diseñadas para mejorar el desempeño técnico en entornos productivos reales.</p>
+<div class="enfoque-box">
+
+<h3>Capacitación técnica integrada</h3>
+
+<p>
+Programas orientados al análisis del funcionamiento integrado de sistemas industriales donde interactúan múltiples tecnologías.
+</p>
+
+<ul>
+
+<li>Diagnóstico integral de sistemas industriales</li>
+<li>Integración de sistemas electromecánicos</li>
+<li>Interacción entre sistemas eléctricos y neumáticos</li>
+<li>Análisis de fallas en maquinaria industrial</li>
+
+</ul>
+
 </div>
 
 </div>
 
 </section>
 
-<section id="areas" class="section">
 
-<h3>Áreas de Capacitación</h3>
+<!-- BENEFICIOS -->
 
-<div class="grid">
+<section class="seccion fondo-gris">
 
-<div class="card">Electricidad Industrial</div>
-<div class="card">Neumática Industrial</div>
-<div class="card">Hidráulica Industrial</div>
-<div class="card">Mecánica Industrial</div>
-<div class="card">Automatización Industrial</div>
+<h2>Beneficios para la empresa</h2>
+
+<div class="beneficios">
+
+<div class="beneficio">
+
+<h4>Mejora técnica</h4>
+
+<p>
+Desarrollo de competencias técnicas para diagnóstico, mantenimiento y operación de sistemas industriales.
+</p>
+
+</div>
+
+
+<div class="beneficio">
+
+<h4>Eficiencia operativa</h4>
+
+<p>
+Mejor desempeño del personal técnico y optimización de procesos de mantenimiento.
+</p>
+
+</div>
+
+
+<div class="beneficio">
+
+<h4>Continuidad productiva</h4>
+
+<p>
+Reducción de fallas y tiempos de parada de maquinaria industrial.
+</p>
+
+</div>
 
 </div>
 
 </section>
 
-<section id="modalidad" class="section">
 
-<h3>Modalidad</h3>
+<!-- MODALIDAD -->
+
+<section class="seccion">
+
+<h2>Modalidad de capacitación</h2>
 
 <p class="texto">
+
 Las capacitaciones están orientadas al desarrollo de competencias técnicas aplicadas al mantenimiento, diagnóstico y operación de sistemas industriales.
+
 </p>
 
 </section>
 
-<section id="contacto" class="section contacto">
 
-<h3>Contacto</h3>
+<!-- CONTACTO -->
+
+<section class="seccion contacto" id="contacto">
+
+<h2>Contacto</h2>
 
 <form>
 
@@ -102,17 +157,19 @@ Las capacitaciones están orientadas al desarrollo de competencias técnicas apl
 
 <textarea placeholder="Mensaje"></textarea>
 
-<button type="submit">Enviar</button>
+<button type="submit">Enviar consulta</button>
 
 </form>
 
 </section>
+
 
 <footer>
 
 <p>Centro de Formación Técnica Industrial Integrada</p>
 
 </footer>
+
 
 <script src="auto.js"></script>
 

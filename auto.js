@@ -1,5 +1,9 @@
-function scrollToSection(id){
-document.getElementById(id).scrollIntoView({
-behavior: "smooth"
+function irAContacto(){
+
+document.getElementById("contacto").scrollIntoView({
+
+behavior:"smooth"
+
 });
+
 }

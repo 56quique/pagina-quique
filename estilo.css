@@ -62,10 +62,11 @@ gap:40px;
 margin-top:40px;
 }
 .enfoque-box{
-background:white;
+background:#2e8b57;
+color:white;
 padding:30px;
 border-radius:8px;
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
 text-align:left;
 max-width:100%;
 }

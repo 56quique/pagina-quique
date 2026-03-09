@@ -1,9 +1,23 @@
-function irAContacto(){
+const elementos = document.querySelectorAll(".aparecer");
 
-document.getElementById("contacto").scrollIntoView({
+function mostrarElementos(){
 
-behavior:"smooth"
+const trigger = window.innerHeight * 0.85;
+
+elementos.forEach(el => {
+
+const top = el.getBoundingClientRect().top;
+
+if(top < trigger){
+
+el.classList.add("visible");
+
+}
 
 });
 
 }
+
+window.addEventListener("scroll", mostrarElementos);
+
+mostrarElementos();

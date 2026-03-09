@@ -344,3 +344,35 @@ opacity:1;
 transform:translateY(0);
 
 }
+/* =========================
+CURSOS NO DISPONIBLES
+========================= */
+
+.curso.no-disponible{
+
+background:#9ca3af; /* gris suave */
+cursor:not-allowed;
+position:relative;
+opacity:0.8;
+
+}
+
+/* etiqueta candado */
+
+.curso.no-disponible::after{
+
+content:"🔒 No disponible";
+position:absolute;
+
+top:10px;
+right:10px;
+
+background:#374151;
+color:white;
+
+font-size:12px;
+padding:4px 8px;
+
+border-radius:4px;
+
+}

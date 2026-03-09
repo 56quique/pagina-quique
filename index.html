@@ -17,8 +17,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 
 <body>
 
-<!-- HERO -->
-
 <section class="hero">
 
 <h1>Formación Técnica Industrial</h1>
@@ -35,8 +33,6 @@ Explorar capacitaciones
 </section>
 
 
-<!-- SISTEMA -->
-
 <section class="bloque sistema aparecer">
 
 <h2>Nuestro sistema de formación</h2>
@@ -52,13 +48,11 @@ sino también la interacción entre sistemas tecnológicos que forman una aplica
 </p>
 
 <p>
-Todas nuestras capacitaciones se desarrollan (in situ), dentro de las instalaciones de su empresa, esto facilita la interacción con el contexto real de aplicación.
+Todas nuestras capacitaciones se desarrollan (in situ) dentro de las instalaciones de su empresa.
 </p>
 
 </section>
 
-
-<!-- AREAS TECNOLOGICAS -->
 
 <section class="bloque areas aparecer">
 
@@ -81,13 +75,13 @@ Todas nuestras capacitaciones se desarrollan (in situ), dentro de las instalacio
 <div class="card">
 <i class="fa-solid fa-microchip"></i>
 <h3>Electrónica</h3>
-<p>Dispositivos electrónicos, electrónica de control y potencia.</p>
+<p>Dispositivos electrónicos y electrónica de control.</p>
 </div>
 
 <div class="card">
 <i class="fa-solid fa-wind"></i>
 <h3>Neumática</h3>
-<p>Producción, preparación, distribución, y aplicación del aire comprimido.</p>
+<p>Sistemas de aire comprimido industrial.</p>
 </div>
 
 <div class="card">
@@ -101,92 +95,50 @@ Todas nuestras capacitaciones se desarrollan (in situ), dentro de las instalacio
 </section>
 
 
-<!-- CATALOGO -->
-
 <section id="catalogo" class="bloque catalogo aparecer">
 
 <h2>Catálogo de capacitaciones</h2>
-<p>Capacitaciones fundamentales - Área A</p>
 
 <div class="grid-cursos">
 
-<div class="curso">Electricidad industrial - CA1</div>
-<div class="curso no-disponible">Mecánica industrial - CA2</div>
-<div class="curso">Neumática industrial - CA3</div>
-<div class="curso no-disponible">Hidráulica industrial - CA4</div>
-<div class="curso">Electrónica industrial - CA5</div>
+<div class="curso" data-curso="electricidad">
 
-<p>Capacitaciones transversales - Área B</p>
+Electricidad industrial - CA1
 
-<div class="curso">Sistemas electromecánicos - CB1</div>
-<div class="curso">Sistemas electrofluimaticos - CB2</div>
-<div class="curso no-disponible">Sistemas electrónicos - CB3</div>
-<div class="curso no-disponible">Sistemas programables - CB4</div>
-
-<p>Capacitaciones especiales - Área C</p>
-
-<div class="curso no-disponible">Inspección técnica - C1</div>
-<div class="curso">Organización del mantenimiento- C2</div>
-<div class="curso">Seguridad eléctrica - C3</div>
+<div class="curso-info">
+Objetivo: comprender sistemas eléctricos industriales.
+Duración: 4 horas
+</div>
 
 </div>
 
-</section>
+<div class="curso no-disponible">
+Mecánica industrial - CA2
+</div>
 
+<div class="curso" data-curso="neumatica">
 
-<!-- INDUSTRIAS -->
+Neumática industrial - CA3
 
-<section class="bloque madera aparecer">
-
-<h2>Capacitación orientada a la industria maderera yerbatera del te y otras</h2>
-
-<p>
-Las plantas de procesamiento utilizan sistemas eléctricos, neumáticos, electrónicos y automatizados.
-</p>
-
-<p>
-Nuestras capacitaciones están pensadas para mejorar el
-mantenimiento y la productividad en maquinaria industrial.
-</p>
-
-</section>
-
-
-<!-- BENEFICIOS -->
-
-<section class="bloque beneficios aparecer">
-
-<h2>Beneficios para la industria</h2>
-
-<div class="grid">
-
-<div class="card-beneficio">
-
-<h3>Mayor productividad</h3>
-
-<p>
-Personal capacitado para operar y mantener sistemas industriales.
-</p>
+<div class="curso-info">
+Producción y control del aire comprimido.
+Duración: 4 horas
+</div>
 
 </div>
 
-<div class="card-beneficio">
-
-<h3>Menos paradas de máquina</h3>
-
-<p>
-Diagnóstico más rápido de fallas técnicas.
-</p>
-
+<div class="curso no-disponible">
+Hidráulica industrial - CA4
 </div>
 
-<div class="card-beneficio">
+<div class="curso" data-curso="electronica">
 
-<h3>Actualización tecnológica</h3>
+Electrónica industrial - CA5
 
-<p>
-Capacitación en tecnologías industriales actuales.
-</p>
+<div class="curso-info">
+Electrónica de control y potencia industrial.
+Duración: 4 horas
+</div>
 
 </div>
 
@@ -194,19 +146,13 @@ Capacitación en tecnologías industriales actuales.
 
 </section>
 
-
-<!-- CONTACTO -->
 
 <section class="bloque contacto aparecer">
 
 <h2>Contacto</h2>
 
-<p>
-Consultas sobre capacitaciones para empresas o técnicos.
-</p>
-
 <a class="boton-whatsapp"
-href="https://wa.me/5493743553489?text=Hola%20quiero%20informacion%20sobre%20capacitaciones%20industriales"
+href="https://wa.me/5493743553489"
 target="_blank">
 
 Contactar por WhatsApp
@@ -223,8 +169,6 @@ Contactar por WhatsApp
 </footer>
 
 
-<!-- BOTON FLOTANTE WHATSAPP -->
-
 <a class="whatsapp-float"
 href="https://wa.me/5493743553489"
 target="_blank">
@@ -234,8 +178,21 @@ target="_blank">
 </a>
 
 
+<div id="modal" class="modal">
+
+<div class="modal-contenido">
+
+<span class="cerrar">&times;</span>
+
+<h2 id="tituloCurso"></h2>
+
+<div id="contenidoCurso"></div>
+
+</div>
+
+</div>
+
 <script src="script.js"></script>
 
 </body>
-
 </html>

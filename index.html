@@ -6,140 +6,65 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Centro de Formación Técnica Industrial</title>
+<title>Capacitaciones Técnicas Industriales</title>
 
-<link rel="stylesheet" href="estilo.css">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="estilos.css">
 
 </head>
 
 <body>
 
-<section class="hero">
+<header class="hero">
 
-<h1>Formación Técnica Industrial</h1>
+<h1>Capacitaciones Técnicas Industriales</h1>
 
-<p>
-Capacitaciones en electricidad industrial, automatización,
-neumática y diagnóstico de maquinaria.
-</p>
+<p>Formación aplicada para mantenimiento y operación industrial</p>
 
-<a href="#catalogo" class="boton-principal">
-Explorar capacitaciones
-</a>
-
-</section>
+</header>
 
 
-<section class="bloque sistema aparecer">
+<!-- AREA 1 -->
 
-<h2>Nuestro sistema de formación</h2>
+<section class="seccion">
 
-<p>
-Las máquinas industriales modernas integran múltiples tecnologías:
-electricidad, mecánica, electrónica, neumática y control automático.
-</p>
-
-<p>
-Nuestro modelo de capacitación enseña no solo cada área,
-sino también la interacción entre sistemas tecnológicos que forman una aplicación industrial completa.
-</p>
-
-<p>
-Todas nuestras capacitaciones se desarrollan (in situ) dentro de las instalaciones de su empresa.
-</p>
-
-</section>
-
-
-<section class="bloque areas aparecer">
-
-<h2>Áreas tecnológicas</h2>
+<h2>Capacitaciones Básicas</h2>
 
 <div class="grid">
 
-<div class="card">
-<i class="fa-solid fa-bolt"></i>
-<h3>Electricidad industrial</h3>
-<p>Motores, protecciones y tableros eléctricos.</p>
+<div class="tarjeta" data-curso="electricidad">
+<img src="img/electricidad.jpg">
+<div class="info">
+<h3>Electricidad Industrial</h3>
+</div>
+<div class="hover">
+Duración 4 hs<br>
+Instalaciones eléctricas industriales
+</div>
 </div>
 
-<div class="card">
-<i class="fa-solid fa-gear"></i>
-<h3>Mecánica</h3>
-<p>Transmisiones, alineación y mantenimiento.</p>
+<div class="tarjeta">
+<img src="img/mecanica.jpg">
+<div class="info"><h3>Mecánica Industrial</h3></div>
 </div>
 
-<div class="card">
-<i class="fa-solid fa-microchip"></i>
-<h3>Electrónica</h3>
-<p>Dispositivos electrónicos y electrónica de control.</p>
+<div class="tarjeta">
+<img src="img/neumatica.jpg">
+<div class="info"><h3>Neumática Industrial</h3></div>
 </div>
 
-<div class="card">
-<i class="fa-solid fa-wind"></i>
-<h3>Neumática</h3>
-<p>Sistemas de aire comprimido industrial.</p>
+<div class="tarjeta">
+<img src="img/hidraulica.jpg">
+<div class="info"><h3>Hidráulica Industrial</h3></div>
 </div>
 
-<div class="card">
-<i class="fa-solid fa-robot"></i>
-<h3>Automatización</h3>
-<p>Control mediante PLC y sistemas automáticos.</p>
+<div class="tarjeta">
+<img src="img/electronica.jpg">
+<div class="info"><h3>Electrónica Industrial</h3></div>
 </div>
 
-</div>
-
-</section>
-
-
-<section id="catalogo" class="bloque catalogo aparecer">
-
-<h2>Catálogo de capacitaciones</h2>
-
-<div class="grid-cursos">
-
-<div class="curso" data-curso="electricidad">
-
-Electricidad industrial - CA1
-
-<div class="curso-info">
-Objetivo: comprender sistemas eléctricos industriales.
-Duración: 4 horas
-</div>
-
-</div>
-
-<div class="curso no-disponible">
-Mecánica industrial - CA2
-</div>
-
-<div class="curso" data-curso="neumatica">
-
-Neumática industrial - CA3
-
-<div class="curso-info">
-Producción y control del aire comprimido.
-Duración: 4 horas
-</div>
-
-</div>
-
-<div class="curso no-disponible">
-Hidráulica industrial - CA4
-</div>
-
-<div class="curso" data-curso="electronica">
-
-Electrónica industrial - CA5
-
-<div class="curso-info">
-Electrónica de control y potencia industrial.
-Duración: 4 horas
-</div>
-
+<div class="tarjeta">
+<img src="img/automatizacion.jpg">
+<div class="info"><h3>Automatización Industrial</h3></div>
 </div>
 
 </div>
@@ -147,36 +72,73 @@ Duración: 4 horas
 </section>
 
 
-<section class="bloque contacto aparecer">
+<!-- AREA 2 -->
 
-<h2>Contacto</h2>
+<section class="seccion">
 
-<a class="boton-whatsapp"
-href="https://wa.me/5493743553489"
-target="_blank">
+<h2>Capacitaciones Transversales</h2>
 
-Contactar por WhatsApp
+<div class="grid">
 
-</a>
+<div class="tarjeta">
+<img src="img/diagnostico.jpg">
+<div class="info"><h3>Diagnóstico de Fallas</h3></div>
+</div>
+
+<div class="tarjeta">
+<img src="img/seguridad.jpg">
+<div class="info"><h3>Seguridad Eléctrica</h3></div>
+</div>
+
+<div class="tarjeta">
+<img src="img/trabajo.jpg">
+<div class="info"><h3>Trabajo Colaborativo</h3></div>
+</div>
+
+<div class="tarjeta">
+<img src="img/problemas.jpg">
+<div class="info"><h3>Resolución de Problemas</h3></div>
+</div>
+
+</div>
 
 </section>
 
 
-<footer>
+<!-- AREA 3 -->
 
-<p>Centro de Formación Técnica Industrial</p>
+<section class="seccion">
 
-</footer>
+<h2>Capacitaciones Especiales</h2>
+
+<div class="grid">
+
+<div class="tarjeta">
+<img src="img/madera.jpg">
+<div class="info"><h3>Sistemas Eléctricos en Industria Maderera</h3></div>
+</div>
+
+<div class="tarjeta">
+<img src="img/lineas.jpg">
+<div class="info"><h3>Automatización en Líneas de Producción</h3></div>
+</div>
+
+<div class="tarjeta">
+<img src="img/mantenimiento.jpg">
+<div class="info"><h3>Mantenimiento Electromecánico</h3></div>
+</div>
+
+<div class="tarjeta">
+<img src="img/integracion.jpg">
+<div class="info"><h3>Integración de Sistemas Tecnológicos</h3></div>
+</div>
+
+</div>
+
+</section>
 
 
-<a class="whatsapp-float"
-href="https://wa.me/5493743553489"
-target="_blank">
-
-<i class="fa-brands fa-whatsapp"></i>
-
-</a>
-
+<!-- MODAL -->
 
 <div id="modal" class="modal">
 
@@ -186,7 +148,7 @@ target="_blank">
 
 <h2 id="tituloCurso"></h2>
 
-<div id="contenidoCurso"></div>
+<p id="contenidoCurso"></p>
 
 </div>
 

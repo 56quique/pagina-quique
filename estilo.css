@@ -3,162 +3,104 @@ body{
 font-family:Arial;
 margin:0;
 background:#e5e7eb;
-color:#333;
-font-size:20px;
 
 }
 
 .hero{
 
-height:90vh;
 background:#1e3a8a;
 color:white;
-
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
 text-align:center;
-
-}
-
-.boton-principal{
-
-background:#f97316;
-color:white;
-padding:18px 28px;
-text-decoration:none;
-border-radius:6px;
-
-}
-
-.bloque{
-
 padding:80px 20px;
+
+}
+
+.seccion{
+
 max-width:1100px;
 margin:auto;
-text-align:center;
+padding:60px 20px;
 
 }
 
 .grid{
 
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:25px;
 
 }
 
-.card{
-
-background:white;
-padding:25px;
-border-radius:8px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
-
-}
-
-.grid-cursos{
-
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-
-}
-
-.curso{
-
-background:#2563eb;
-color:white;
-
-padding:25px;
-border-radius:6px;
-
-cursor:pointer;
+.tarjeta{
 
 position:relative;
+cursor:pointer;
 overflow:hidden;
-
-transition:0.3s;
-
-}
-
-.curso:hover{
-
-transform:scale(1.05);
+border-radius:8px;
 
 }
 
-/* información que aparece */
-
-.curso-info{
-
-position:absolute;
-
-bottom:0;
-left:0;
+.tarjeta img{
 
 width:100%;
-
-background:rgba(0,0,0,0.75);
-
-padding:15px;
-
-font-size:16px;
-
-transform:translateY(100%);
-transition:0.3s;
+height:200px;
+object-fit:cover;
 
 }
 
-.curso:hover .curso-info{
-
-transform:translateY(0);
-
-}
-
-/* cursos bloqueados */
-
-.curso.no-disponible{
-
-background:#9ca3af;
-cursor:not-allowed;
-
-}
-
-.curso.no-disponible::after{
-
-content:"🔒 No disponible";
+.info{
 
 position:absolute;
-top:-7px;
-right:10px;
-
-background:#374151;
+bottom:0;
+background:rgba(0,0,0,0.7);
 color:white;
-
-font-size:12px;
-padding:4px 8px;
-
-border-radius:4px;
+width:100%;
+padding:10px;
 
 }
 
-/* ventana modal */
+.hover{
 
-.modal{
-
-display:none;
-
-position:fixed;
-
+position:absolute;
 top:0;
 left:0;
 
 width:100%;
 height:100%;
 
-background:rgba(0,0,0,0.6);
+background:rgba(0,0,0,0.8);
+color:white;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+opacity:0;
+transition:0.3s;
+
+text-align:center;
+padding:20px;
+
+}
+
+.tarjeta:hover .hover{
+
+opacity:1;
+
+}
+
+.modal{
+
+display:none;
+
+position:fixed;
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background:rgba(0,0,0,0.7);
 
 justify-content:center;
 align-items:center;
@@ -169,40 +111,16 @@ align-items:center;
 
 background:white;
 padding:30px;
-max-width:700px;
 width:90%;
+max-width:700px;
 border-radius:8px;
-text-align:left;
 
 }
 
 .cerrar{
 
-font-size:30px;
-cursor:pointer;
-
-}
-
-footer{
-
-background:#111;
-color:white;
-text-align:center;
-padding:20px;
-
-}
-
-.whatsapp-float{
-
-position:fixed;
-bottom:25px;
-right:25px;
-
-background:#22c55e;
-color:white;
-
+float:right;
 font-size:28px;
-padding:15px;
-border-radius:50%;
+cursor:pointer;
 
 }

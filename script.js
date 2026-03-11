@@ -1,44 +1,148 @@
-const tarjetas=document.querySelectorAll(".tarjeta");
+/* ================================================= */
+/* BASE DE DATOS DE CAPACITACIONES */
+/* SOLO MODIFICAR ESTA PARTE */
+/* ================================================= */
 
-const modal=document.getElementById("modal");
+const capacitaciones = {
 
-const titulo=document.getElementById("tituloCurso");
-const contenido=document.getElementById("contenidoCurso");
+areaA:[
 
-const cerrar=document.querySelector(".cerrar");
+{
+titulo:"Capacitación 1",
+imagen:"img/curso1.jpg",
+info:"Descripción breve visible al pasar el mouse",
+detalle:"Descripción completa del curso que aparecerá en el modal."
+},
 
-tarjetas.forEach(tarjeta=>{
+{
+titulo:"Capacitación 2",
+imagen:"img/curso2.jpg",
+info:"Descripción breve visible al pasar el mouse",
+detalle:"Descripción completa del curso."
+}
 
-tarjeta.addEventListener("click",()=>{
+],
 
-let curso=tarjeta.dataset.curso;
+areaB:[],
 
-if(curso==="electricidad"){
-
-titulo.innerText="Electricidad Industrial";
-
-contenido.innerText="Comprender la distribución eléctrica en planta industrial. Incluye tableros, cargas, protecciones y diagnóstico de fallas.";
-
-modal.style.display="flex";
+areaC:[]
 
 }
 
-});
 
-});
 
-cerrar.onclick=()=>{
+/* ================================================= */
+/* FUNCION PARA CREAR TARJETAS AUTOMATICAMENTE */
+/* ================================================= */
 
-modal.style.display="none";
+function cargarArea(area,id){
+
+const contenedor=document.getElementById(id)
+
+area.forEach(curso=>{
+
+const tarjeta=document.createElement("div")
+
+tarjeta.classList.add("tarjeta")
+
+tarjeta.innerHTML=`
+
+<img src="${curso.imagen}">
+
+<h4>${curso.titulo}</h4>
+
+<div class="info">${curso.info}</div>
+
+`
+
+/* EVENTO PARA ABRIR MODAL */
+
+tarjeta.onclick=()=>{
+
+abrirModal(curso.titulo,curso.detalle)
 
 }
 
-window.onclick=(e)=>{
+contenedor.appendChild(tarjeta)
+
+})
+
+}
+
+
+
+/* ================================================= */
+/* CARGA DE LAS AREAS */
+/* ================================================= */
+
+cargarArea(capacitaciones.areaA,"areaA")
+cargarArea(capacitaciones.areaB,"areaB")
+cargarArea(capacitaciones.areaC,"areaC")
+
+
+
+/* ================================================= */
+/* SISTEMA DEL MODAL */
+/* ================================================= */
+
+const modal=document.getElementById("modal")
+
+const titulo=document.getElementById("modal-titulo")
+
+const texto=document.getElementById("modal-texto")
+
+const cerrar=document.querySelector(".cerrar")
+
+function abrirModal(t,d){
+
+titulo.textContent=t
+
+texto.textContent=d
+
+modal.style.display="flex"
+
+}
+
+cerrar.onclick=function(){
+
+modal.style.display="none"
+
+}
+
+window.onclick=function(e){
 
 if(e.target==modal){
 
-modal.style.display="none";
+modal.style.display="none"
 
 }
 
 }
+
+
+
+/* ================================================= */
+/* ANIMACION AL HACER SCROLL */
+/* ================================================= */
+
+const elementos=document.querySelectorAll(".aparecer")
+
+function mostrarElementos(){
+
+const altura=window.innerHeight
+
+elementos.forEach(el=>{
+
+const distancia=el.getBoundingClientRect().top
+
+if(distancia < altura-100){
+
+el.classList.add("visible")
+
+}
+
+})
+
+}
+
+window.addEventListener("scroll",mostrarElementos)

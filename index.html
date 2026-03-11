@@ -3,156 +3,170 @@
 
 <head>
 
+<!-- ================================================= -->
+<!-- CONFIGURACION BASICA DEL DOCUMENTO -->
+<!-- ================================================= -->
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Capacitaciones Técnicas Industriales</title>
 
-<link rel="stylesheet" href="estilo.css">
+<!-- CONEXION CON HOJA DE ESTILOS -->
+<link rel="stylesheet" href="style.css">
 
 </head>
 
+
 <body>
 
-<header class="hero">
-
-<h1>Capacitaciones Técnicas Industriales</h1>
-
-<p>Formación aplicada para mantenimiento y operación industrial</p>
-
-</header>
 
 
-<!-- AREA 1 -->
+<!-- ================================================= -->
+<!-- SECCION 1 - PORTADA -->
+<!-- Imagen de fondo + titulo grande + descripcion -->
+<!-- ================================================= -->
 
-<section class="seccion">
+<section class="hero">
 
-<h2>Capacitaciones Básicas</h2>
+<div class="hero-contenido">
 
-<div class="grid">
+<h1>Capacitación Técnica para la Industria</h1>
 
-<div class="tarjeta" data-curso="electricidad">
-<img src="img/electricidad.jpg">
-<div class="info">
-<h3>Electricidad Industrial</h3>
-</div>
-<div class="hover">
-Duración 4 hs<br>
-Instalaciones eléctricas industriales
-</div>
-</div>
-
-<div class="tarjeta">
-<img src="img/mecanica.jpg">
-<div class="info"><h3>Mecánica Industrial</h3></div>
-</div>
-
-<div class="tarjeta">
-<img src="img/neumatica.jpg">
-<div class="info"><h3>Neumática Industrial</h3></div>
-</div>
-
-<div class="tarjeta">
-<img src="img/hidraulica.jpg">
-<div class="info"><h3>Hidráulica Industrial</h3></div>
-</div>
-
-<div class="tarjeta">
-<img src="img/electronica.jpg">
-<div class="info"><h3>Electrónica Industrial</h3></div>
-</div>
-
-<div class="tarjeta">
-<img src="img/automatizacion.jpg">
-<div class="info"><h3>Automatización Industrial</h3></div>
-</div>
+<p>
+Programas de formación orientados a mejorar la productividad,
+la seguridad y la eficiencia en industrias de la región.
+</p>
 
 </div>
 
 </section>
 
 
-<!-- AREA 2 -->
 
-<section class="seccion">
+<!-- ================================================= -->
+<!-- SECCION 2 - PROBLEMATICA Y SOLUCION -->
+<!-- ================================================= -->
 
-<h2>Capacitaciones Transversales</h2>
+<section class="problema aparecer">
 
-<div class="grid">
+<h2>El desafío de la industria actual</h2>
 
-<div class="tarjeta">
-<img src="img/diagnostico.jpg">
-<div class="info"><h3>Diagnóstico de Fallas</h3></div>
-</div>
+<p>
+Las industrias requieren personal técnico con conocimientos
+actualizados en mantenimiento, automatización y sistemas eléctricos.
+</p>
 
-<div class="tarjeta">
-<img src="img/seguridad.jpg">
-<div class="info"><h3>Seguridad Eléctrica</h3></div>
-</div>
-
-<div class="tarjeta">
-<img src="img/trabajo.jpg">
-<div class="info"><h3>Trabajo Colaborativo</h3></div>
-</div>
-
-<div class="tarjeta">
-<img src="img/problemas.jpg">
-<div class="info"><h3>Resolución de Problemas</h3></div>
-</div>
-
-</div>
+<p>
+Nuestro sistema de capacitación desarrolla competencias
+aplicadas directamente a la realidad productiva de la empresa.
+</p>
 
 </section>
 
 
-<!-- AREA 3 -->
 
-<section class="seccion">
+<!-- ================================================= -->
+<!-- SECCION 3 - CAPACITACIONES -->
+<!-- ================================================= -->
 
-<h2>Capacitaciones Especiales</h2>
+<section class="capacitaciones">
 
-<div class="grid">
+<h2>Áreas de Capacitación</h2>
 
-<div class="tarjeta">
-<img src="img/madera.jpg">
-<div class="info"><h3>Sistemas Eléctricos en Industria Maderera</h3></div>
-</div>
 
-<div class="tarjeta">
-<img src="img/lineas.jpg">
-<div class="info"><h3>Automatización en Líneas de Producción</h3></div>
-</div>
+<!-- AREA A -->
 
-<div class="tarjeta">
-<img src="img/mantenimiento.jpg">
-<div class="info"><h3>Mantenimiento Electromecánico</h3></div>
-</div>
+<h3>Área A</h3>
 
-<div class="tarjeta">
-<img src="img/integracion.jpg">
-<div class="info"><h3>Integración de Sistemas Tecnológicos</h3></div>
-</div>
+<div class="contenedor-tarjetas aparecer" id="areaA"></div>
 
-</div>
+
+
+<!-- AREA B -->
+
+<h3>Área B</h3>
+
+<div class="contenedor-tarjetas aparecer" id="areaB"></div>
+
+
+
+<!-- AREA C -->
+
+<h3>Área C</h3>
+
+<div class="contenedor-tarjetas aparecer" id="areaC"></div>
+
 
 </section>
 
 
-<!-- MODAL -->
+
+<!-- ================================================= -->
+<!-- SECCION 4 - BENEFICIOS -->
+<!-- ================================================= -->
+
+<section class="beneficios aparecer">
+
+<h2>Beneficios para la Empresa</h2>
+
+<ul>
+
+<li>Incremento de la eficiencia operativa</li>
+
+<li>Reducción de fallas técnicas</li>
+
+<li>Mayor seguridad industrial</li>
+
+<li>Actualización tecnológica del personal</li>
+
+<li>Fortalecimiento de las capacidades internas</li>
+
+</ul>
+
+</section>
+
+
+
+<!-- ================================================= -->
+<!-- MODAL (VENTANA EMERGENTE DE CURSOS) -->
+<!-- ================================================= -->
 
 <div id="modal" class="modal">
 
 <div class="modal-contenido">
 
+<!-- BOTON CERRAR -->
 <span class="cerrar">&times;</span>
 
-<h2 id="tituloCurso"></h2>
+<h2 id="modal-titulo"></h2>
 
-<p id="contenidoCurso"></p>
+<p id="modal-texto"></p>
+
+</div>
 
 </div>
 
-</div>
+
+
+<!-- ================================================= -->
+<!-- BOTON FLOTANTE DE WHATSAPP -->
+<!-- ================================================= -->
+
+<a 
+href="https://wa.me/543743553489"
+class="whatsapp"
+target="_blank">
+
+WhatsApp
+
+</a>
+
+
+
+<!-- ================================================= -->
+<!-- CONEXION CON JAVASCRIPT -->
+<!-- ================================================= -->
 
 <script src="script.js"></script>
 

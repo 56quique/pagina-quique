@@ -19,6 +19,33 @@ titulo:"Mecánica Industrial",
 imagen:"img/curso2.jpg",
 info:"Descripción breve visible al pasar el mouse",
 detalle:"Descripción completa del curso."
+},
+{
+titulo:"Mecánica Industrial",
+imagen:"img/curso2.jpg",
+info:"Descripción breve visible al pasar el mouse",
+detalle:"Descripción completa del curso."
+},
+
+{
+titulo:"Mecánica Industrial",
+imagen:"img/curso2.jpg",
+info:"Descripción breve visible al pasar el mouse",
+detalle:"Descripción completa del curso."
+},
+
+{
+titulo:"Mecánica Industrial",
+imagen:"img/curso2.jpg",
+info:"Descripción breve visible al pasar el mouse",
+detalle:"Descripción completa del curso."
+},
+
+{
+titulo:"Mecánica Industrial",
+imagen:"img/curso2.jpg",
+info:"Descripción breve visible al pasar el mouse",
+detalle:"Descripción completa del curso."
 }
 
 ],

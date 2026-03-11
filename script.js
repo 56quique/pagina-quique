@@ -8,14 +8,14 @@ const capacitaciones = {
 areaA:[
 
 {
-titulo:"Capacitación 1",
+titulo:"Electricidad Industrial",
 imagen:"img/curso1.jpg",
 info:"Descripción breve visible al pasar el mouse",
 detalle:"Descripción completa del curso que aparecerá en el modal."
 },
 
 {
-titulo:"Capacitación 2",
+titulo:"Mecánica Industrial",
 imagen:"img/curso2.jpg",
 info:"Descripción breve visible al pasar el mouse",
 detalle:"Descripción completa del curso."

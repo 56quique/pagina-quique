@@ -80,7 +80,7 @@ tarjeta.innerHTML=`
 
 <div class="info">${curso.info}</div>
 
-
+`;
 
 /* EVENTO PARA ABRIR MODAL */
 

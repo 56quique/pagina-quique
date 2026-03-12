@@ -182,13 +182,13 @@ padding:15px;
 
 transform:translateY(100%);
 
-transition:0.3s;
+transition:0.4s;
 
 }
 
 /* EFECTO AL PASAR EL MOUSE */
 
-.tarjeta:hover .info{
+.tarjeta.activa .info{
 
 transform:translateY(0);
 

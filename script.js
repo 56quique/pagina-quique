@@ -36,7 +36,7 @@ detalle:"Descripción completa del curso."
 
 {
 titulo:"Electrónica Industrial",
-imagen:"img/curso5.jpg",
+imagen:"img/curso5.jpeg",
 info:"Descripción breve visible al pasar el mouse",
 detalle:"Descripción completa del curso."
 },

@@ -136,6 +136,21 @@ box-shadow:0 10px 25px rgba(0,0,0,0.2);
 
 }
 
+/* ================================= */
+/* TARJETA ACTIVA (DESTACADA) */
+/* Cuando está en el centro de pantalla */
+/* ================================= */
+
+.tarjeta.activa{
+
+transform:scale(1.04);   /* hace que crezca un poco */
+
+border:2px solid #2ecc71; /* borde verde */
+
+box-shadow:0 12px 30px rgba(0,0,0,0.25); /* sombra más fuerte */
+
+}
+
 
 
 /* IMAGEN DE LA TARJETA */

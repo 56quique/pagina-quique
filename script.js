@@ -1,149 +1,315 @@
 /* ================================================= */
-/* BASE DE DATOS DE CAPACITACIONES */
-/* SOLO MODIFICAR ESTA PARTE */
+/* ESTILO GENERAL DEL SITIO */
 /* ================================================= */
 
-const capacitaciones = {
+body{
 
-areaA:[
+font-family:Arial, sans-serif;
 
-{
-titulo:"Electricidad Industrial",
-imagen:"img/curso1.jpg",
-info:"Introducción a los sistemas eléctricos industriales.",
-detalle:"Descripción completa del curso que aparecerá en el modal."
-},
+margin:0;
 
-{
-titulo:"Mecánica Industrial",
-imagen:"img/curso2.jpg",
-info:"Mantenimiento, montaje y diagnóstico de sistemas mecánicos industriales.",
-detalle:"Descripción completa del curso."
-},
-{
-titulo:"Neumática Industrial",
-imagen:"img/curso3.jpg",
-info:"Diseño, interpretación y mantenimiento de circuitos neumáticos industriales.",
-detalle:"Descripción completa del curso."
-},
+background:#f4f4f4;
 
-{
-titulo:"Hidráulica Industrial",
-imagen:"img/curso4.jpg",
-info:"Funcionamiento y mantenimiento de sistemas hidráulicos en maquinaria industrial.",
-detalle:"Descripción completa del curso."
-},
-
-{
-titulo:"Electrónica Industrial",
-imagen:"img/curso5.jpeg",
-info:"Diagnóstico y mantenimiento de circuitos electrónicos aplicados a sistemas industriales.",
-detalle:"Descripción completa del curso."
-},
-
-{
-titulo:"Automatización Industrial",
-imagen:"img/curso6.jpg",
-info:"Fundamentos de control automático y automatización de procesos industriales.",
-detalle:"Descripción completa del curso."
-}
-
-],
-
-areaB:[],
-
-areaC:[]
+color:#333;
 
 }
 
 
 
 /* ================================================= */
-/* FUNCION PARA CREAR TARJETAS AUTOMATICAMENTE */
+/* SECCION PORTADA */
 /* ================================================= */
 
-function cargarArea(area,id){
+.hero{
 
-const contenedor=document.getElementById(id)
+height:90vh;
 
-area.forEach(curso=>{
+/* IMAGEN DE FONDO */
 
-const tarjeta=document.createElement("div")
+background:url("img/portada.jpg") center/cover;
 
-tarjeta.classList.add("tarjeta")
+display:flex;
 
-tarjeta.innerHTML=`
+align-items:center;
 
-<img src="${curso.imagen}">
+justify-content:center;
 
-<h4>${curso.titulo}</h4>
+text-align:center;
 
-<div class="info">${curso.info}</div>
-
-`
-
-/* EVENTO PARA ABRIR MODAL */
-
-tarjeta.onclick=()=>{
-
-abrirModal(curso.titulo,curso.detalle)
+color:white;
 
 }
 
-contenedor.appendChild(tarjeta)
-observer.observe(tarjeta)
+/* CAJA OSCURA PARA MEJORAR LECTURA */
 
-})
+.hero-contenido{
+
+background:rgba(0,0,0,0.6);
+
+padding:40px;
+
+border-radius:8px;
+
+max-width:600px;
+
+}
+
+/* TITULO PRINCIPAL */
+
+.hero h1{
+
+font-size:48px;
+
+margin-bottom:20px;
 
 }
 
 
 
 /* ================================================= */
-/* CARGA DE LAS AREAS */
+/* SECCIONES GENERALES */
 /* ================================================= */
 
-cargarArea(capacitaciones.areaA,"areaA")
-cargarArea(capacitaciones.areaB,"areaB")
-cargarArea(capacitaciones.areaC,"areaC")
+section{
 
-
-
-/* ================================================= */
-/* SISTEMA DEL MODAL */
-/* ================================================= */
-
-const modal=document.getElementById("modal")
-
-const titulo=document.getElementById("modal-titulo")
-
-const texto=document.getElementById("modal-texto")
-
-const cerrar=document.querySelector(".cerrar")
-
-function abrirModal(t,d){
-
-titulo.textContent=t
-
-texto.textContent=d
-
-modal.style.display="flex"
+padding:70px 10%;
 
 }
 
-cerrar.onclick=function(){
+h2{
 
-modal.style.display="none"
+color:#1f3c88;
+
+margin-bottom:20px;
+
+}
+
+
+
+/* ================================================= */
+/* CONTENEDOR DE TARJETAS */
+/* ================================================= */
+
+.contenedor-tarjetas{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+margin-bottom:40px;
 
 }
 
-window.onclick=function(e){
 
-if(e.target==modal){
 
-modal.style.display="none"
+/* ================================================= */
+/* TARJETAS DE CAPACITACIONES */
+/* ================================================= */
+
+.tarjeta{
+
+background:white;
+
+border-radius:10px;
+
+overflow:hidden;
+
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
+transition:0.3s;
+
+cursor:pointer;
+
+position:relative;
 
 }
+
+/* EFECTO HOVER */
+
+.tarjeta:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+
+}
+
+/* ================================= */
+/* TARJETA ACTIVA (DESTACADA) */
+/* Cuando está en el centro de pantalla */
+/* ================================= */
+
+.tarjeta.activa{
+
+transform:scale(1.04);   /* hace que crezca un poco */
+
+border:2px solid #2ecc71; /* borde verde */
+
+box-shadow:0 12px 30px rgba(0,0,0,0.25); /* sombra más fuerte */
+
+}
+
+
+
+/* IMAGEN DE LA TARJETA */
+
+.tarjeta img{
+
+width:100%;
+
+height:170px;
+
+object-fit:cover;
+
+}
+
+
+
+/* TITULO DEL CURSO */
+
+.tarjeta h4{
+
+padding:15px;
+
+color:#1f3c88;
+
+}
+
+
+
+/* INFORMACION OCULTA (APARECE EN HOVER) */
+
+.info{
+
+position:absolute;
+
+bottom:0;
+
+background:rgba(0,0,0,0.85);
+
+color:white;
+
+width:100%;
+
+padding:15px;
+
+transform:translateY(100%);
+
+transition:0.4s;
+
+}
+
+/* EFECTO AL PASAR EL MOUSE */
+
+.tarjeta.activa .info{
+
+transform:translateY(0);
+
+}
+
+
+
+/* ================================================= */
+/* BENEFICIOS */
+/* ================================================= */
+
+.beneficios ul{
+
+line-height:2;
+
+font-size:18px;
+
+}
+
+
+
+/* ================================================= */
+/* MODAL */
+/* ================================================= */
+
+.modal{
+
+display:none;
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+background:rgba(0,0,0,0.7);
+
+align-items:center;
+
+justify-content:center;
+
+}
+
+/* CONTENIDO DEL MODAL */
+
+.modal-contenido{
+
+background:white;
+
+padding:40px;
+
+max-width:500px;
+
+border-radius:8px;
+
+position:relative;
+
+}
+
+/* BOTON CERRAR */
+
+.cerrar{
+
+position:absolute;
+
+top:10px;
+
+right:20px;
+
+font-size:28px;
+
+cursor:pointer;
+
+}
+
+
+
+/* ================================================= */
+/* BOTON WHATSAPP */
+/* ================================================= */
+
+.whatsapp{
+
+position:fixed;
+
+bottom:20px;
+
+right:20px;
+
+background:#25D366;
+
+color:white;
+
+padding:15px 20px;
+
+border-radius:50px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
 
 }
 
@@ -153,54 +319,20 @@ modal.style.display="none"
 /* ANIMACION AL HACER SCROLL */
 /* ================================================= */
 
-const elementos=document.querySelectorAll(".aparecer")
+.aparecer{
 
-function mostrarElementos(){
+opacity:0;
 
-const altura=window.innerHeight
+transform:translateY(40px);
 
-elementos.forEach(el=>{
-
-const distancia=el.getBoundingClientRect().top
-
-if(distancia < altura-100){
-
-el.classList.add("visible")
+transition:1s;
 
 }
 
-})
+.aparecer.visible{
+
+opacity:1;
+
+transform:translateY(0);
 
 }
-
-window.addEventListener("scroll",mostrarElementos)
-
-/* ===================================== */
-/* SISTEMA INTELIGENTE DE TARJETAS */
-/* Solo una tarjeta abierta a la vez */
-/* ===================================== */
-
-const observer = new IntersectionObserver((entradas)=>{
-
-entradas.forEach(entrada=>{
-
-if(entrada.isIntersecting){
-
-/* cerrar todas */
-
-document.querySelectorAll(".tarjeta").forEach(t=>{
-t.classList.remove("activa")
-})
-
-/* abrir la visible */
-
-entrada.target.classList.add("activa")
-
-}
-
-})
-
-},
-{
-threshold:0.6
-})

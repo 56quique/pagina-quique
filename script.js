@@ -10,41 +10,41 @@ areaA:[
 {
 titulo:"Electricidad Industrial",
 imagen:"img/curso1.jpg",
-info:"Descripción breve visible al pasar el mouse",
+info:"Introducción a los sistemas eléctricos industriales.",
 detalle:"Descripción completa del curso que aparecerá en el modal."
 },
 
 {
 titulo:"Mecánica Industrial",
 imagen:"img/curso2.jpg",
-info:"Descripción breve visible al pasar el mouse",
+info:"Mantenimiento, montaje y diagnóstico de sistemas mecánicos industriales.",
 detalle:"Descripción completa del curso."
 },
 {
 titulo:"Neumática Industrial",
 imagen:"img/curso3.jpg",
-info:"Descripción breve visible al pasar el mouse",
+info:"Diseño, interpretación y mantenimiento de circuitos neumáticos industriales.",
 detalle:"Descripción completa del curso."
 },
 
 {
 titulo:"Hidráulica Industrial",
 imagen:"img/curso4.jpg",
-info:"Descripción breve visible al pasar el mouse",
+info:"Funcionamiento y mantenimiento de sistemas hidráulicos en maquinaria industrial.",
 detalle:"Descripción completa del curso."
 },
 
 {
 titulo:"Electrónica Industrial",
 imagen:"img/curso5.jpeg",
-info:"Descripción breve visible al pasar el mouse",
+info:"Diagnóstico y mantenimiento de circuitos electrónicos aplicados a sistemas industriales.",
 detalle:"Descripción completa del curso."
 },
 
 {
 titulo:"Automatización Industrial",
 imagen:"img/curso6.jpg",
-info:"Descripción breve visible al pasar el mouse",
+info:"Fundamentos de control automático y automatización de procesos industriales.",
 detalle:"Descripción completa del curso."
 }
 

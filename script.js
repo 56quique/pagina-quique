@@ -21,29 +21,29 @@ info:"Descripción breve visible al pasar el mouse",
 detalle:"Descripción completa del curso."
 },
 {
-titulo:"Mecánica Industrial",
-imagen:"img/curso2.jpg",
+titulo:"Neumática Industrial",
+imagen:"img/curso3.jpg",
 info:"Descripción breve visible al pasar el mouse",
 detalle:"Descripción completa del curso."
 },
 
 {
-titulo:"Mecánica Industrial",
-imagen:"img/curso2.jpg",
+titulo:"Hidráulica Industrial",
+imagen:"img/curso4.jpg",
 info:"Descripción breve visible al pasar el mouse",
 detalle:"Descripción completa del curso."
 },
 
 {
-titulo:"Mecánica Industrial",
-imagen:"img/curso2.jpg",
+titulo:"Electrónica Industrial",
+imagen:"img/curso5.jpg",
 info:"Descripción breve visible al pasar el mouse",
 detalle:"Descripción completa del curso."
 },
 
 {
-titulo:"Mecánica Industrial",
-imagen:"img/curso2.jpg",
+titulo:"Automatización Industrial",
+imagen:"img/curso6.jpg",
 info:"Descripción breve visible al pasar el mouse",
 detalle:"Descripción completa del curso."
 }

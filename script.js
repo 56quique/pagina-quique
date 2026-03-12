@@ -91,6 +91,7 @@ abrirModal(curso.titulo,curso.detalle)
 }
 
 contenedor.appendChild(tarjeta)
+observer.observe(tarjeta)
 
 })
 

@@ -173,3 +173,33 @@ el.classList.add("visible")
 }
 
 window.addEventListener("scroll",mostrarElementos)
+
+/* ===================================== */
+/* SISTEMA INTELIGENTE DE TARJETAS */
+/* Solo una tarjeta abierta a la vez */
+/* ===================================== */
+
+const observer = new IntersectionObserver((entradas)=>{
+
+entradas.forEach(entrada=>{
+
+if(entrada.isIntersecting){
+
+/* cerrar todas */
+
+document.querySelectorAll(".tarjeta").forEach(t=>{
+t.classList.remove("activa")
+})
+
+/* abrir la visible */
+
+entrada.target.classList.add("activa")
+
+}
+
+})
+
+},
+{
+threshold:0.6
+})

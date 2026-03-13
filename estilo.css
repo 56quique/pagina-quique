@@ -1,3 +1,14 @@
+html{
+scroll-behavior:smooth;
+}
+.boton-secundario{
+margin-left:15px;
+background:#2c7be5;
+}
+
+.boton-secundario:hover{
+background:#1a5ed6;
+}
 body{
 background:#f4f6f9;
 font-size:17px;

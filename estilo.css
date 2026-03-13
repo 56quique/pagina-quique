@@ -285,3 +285,8 @@ color:#555;
 transform:translateY(-6px);
 box-shadow:0 8px 20px rgba(0,0,0,0.15);
 }
+.icono-sector{
+font-size:40px;
+color:#2c7be5;
+margin-bottom:15px;
+}

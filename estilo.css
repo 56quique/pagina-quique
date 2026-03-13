@@ -198,3 +198,10 @@ border-radius:50%;
 text-decoration:none;
 box-shadow:0 5px 15px rgba(0,0,0,0.3);
 }
+
+.titulo-cursos{
+width:100%;
+text-align:center;
+margin-bottom:40px;
+font-size:32px;
+}

@@ -241,3 +241,47 @@ text-align:center;
 position:relative;
 animation:modalAparecer 0.4s;
 }
+/* SECTORES INDUSTRIALES */
+
+.sectores{
+padding:70px 20px;
+text-align:center;
+background:white;
+}
+
+.sectores h2{
+margin-bottom:40px;
+}
+
+.sectores-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+max-width:1000px;
+margin:auto;
+}
+
+.sector{
+background:#f4f6f9;
+padding:25px;
+border-radius:10px;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+transition:0.3s;
+font-size:20px;
+}
+
+.sector h3{
+margin-top:10px;
+margin-bottom:10px;
+font-size:20px;
+}
+
+.sector p{
+font-size:14px;
+color:#555;
+}
+
+.sector:hover{
+transform:translateY(-6px);
+box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}

@@ -2,30 +2,18 @@
 <html lang="es">
 
 <head>
-
-<!-- ================================================= -->
-<!-- CONFIGURACION BASICA DEL DOCUMENTO -->
-<!-- ================================================= -->
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Capacitaciones Técnicas Industriales</title>
+<title>Capacitación Técnica Industrial</title>
 
-<!-- CONEXION CON HOJA DE ESTILOS -->
-<link rel="stylesheet" href="estilo.css">
+<link rel="stylesheet" href="estilos.css">
 
 </head>
 
-
 <body>
 
-
-
-<!-- ================================================= -->
-<!-- SECCION 1 - PORTADA -->
-<!-- Imagen de fondo + titulo grande + descripcion -->
-<!-- ================================================= -->
+<!-- HERO -->
 
 <section class="hero">
 
@@ -34,139 +22,99 @@
 <h1>Capacitación Técnica para la Industria</h1>
 
 <p>
-Programas de formación orientados a mejorar la productividad,
-la seguridad y la eficiencia en industrias de la región.
+Programas de formación técnica orientados al desarrollo de competencias
+en electricidad, automatización y mantenimiento industrial.
 </p>
 
-</div>
-
-</section>
-
-
-
-<!-- ================================================= -->
-<!-- SECCION 2 - PROBLEMATICA Y SOLUCION -->
-<!-- ================================================= -->
-
-<section class="problema aparecer">
-
-<h2>El desafío de la industria actual</h2>
-
-<p>
-Las industrias requieren personal técnico con conocimientos
-actualizados en mantenimiento, automatización y sistemas eléctricos.
-</p>
-
-<p>
-Nuestro sistema de capacitación desarrolla competencias
-aplicadas directamente a la realidad productiva de la empresa.
-</p>
-
-</section>
-
-
-
-<!-- ================================================= -->
-<!-- SECCION 3 - CAPACITACIONES -->
-<!-- ================================================= -->
-
-<section class="capacitaciones">
-
-<h2>Áreas de Capacitación</h2>
-
-
-<!-- AREA A -->
-
-<h3>Capacitaciones fundamentales - A</h3>
-
-<div class="contenedor-tarjetas aparecer" id="areaA"></div>
-
-
-
-<!-- AREA B -->
-
-<h3>Capacitaciones transversales - B</h3>
-
-<div class="contenedor-tarjetas aparecer" id="areaB"></div>
-
-
-
-<!-- AREA C -->
-
-<h3>Capacitaciones especiales - C</h3>
-
-<div class="contenedor-tarjetas aparecer" id="areaC"></div>
-
-
-</section>
-
-
-
-<!-- ================================================= -->
-<!-- SECCION 4 - BENEFICIOS -->
-<!-- ================================================= -->
-
-<section class="beneficios aparecer">
-
-<h2>Beneficios para la Empresa</h2>
-
-<ul>
-
-<li>Incremento de la eficiencia operativa</li>
-
-<li>Reducción de fallas técnicas</li>
-
-<li>Mayor seguridad industrial</li>
-
-<li>Actualización tecnológica del personal</li>
-
-<li>Fortalecimiento de las capacidades internas</li>
-
-</ul>
-
-</section>
-
-
-
-<!-- ================================================= -->
-<!-- MODAL (VENTANA EMERGENTE DE CURSOS) -->
-<!-- ================================================= -->
-
-<div id="modal" class="modal">
-
-<div class="modal-contenido">
-
-<!-- BOTON CERRAR -->
-<span class="cerrar">&times;</span>
-
-<h2 id="modal-titulo"></h2>
-
-<p id="modal-texto"></p>
-
-</div>
-
-</div>
-
-
-
-<!-- ================================================= -->
-<!-- BOTON FLOTANTE DE WHATSAPP -->
-<!-- ================================================= -->
-
-<a 
-href="https://wa.me/543743553489"
-class="whatsapp"
-target="_blank">
-
-WhatsApp
-
+<a class="boton" href="https://wa.me/543743553489" target="_blank">
+Consultar por WhatsApp
 </a>
 
+</div>
 
+</section>
 
-<!-- ================================================= -->
-<!-- CONEXION CON JAVASCRIPT -->
-<!-- ================================================= -->
+<!-- SERVICIO -->
+
+<section class="servicio">
+
+<h2>Capacitación técnica aplicada a la industria</h2>
+
+<p>
+Las capacitaciones están orientadas al desarrollo de competencias técnicas
+en el personal de planta, integrando conocimientos teóricos y prácticos
+aplicados a los sistemas reales de trabajo.
+</p>
+
+</section>
+
+<!-- AREAS -->
+
+<section class="areas">
+
+<h2>Catálogo de Capacitaciones</h2>
+
+<div class="tarjetas">
+
+<div class="tarjeta" onclick="mostrarCursos('A')">
+<img src="img/curso1.jpg">
+<h3>Capacitaciones Fundamentales</h3>
+<p>Formación técnica básica para personal de planta.</p>
+</div>
+
+<div class="tarjeta" onclick="mostrarCursos('B')">
+<img src="img/curso2.jpg">
+<h3>Capacitaciones Transversales</h3>
+<p>Conocimientos aplicables a distintos sectores industriales.</p>
+</div>
+
+<div class="tarjeta" onclick="mostrarCursos('C')">
+<img src="img/curso3.jpg">
+<h3>Capacitaciones Especiales</h3>
+<p>Tecnologías específicas aplicadas a la industria.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- CURSOS -->
+
+<section id="cursos" class="cursos"></section>
+
+<!-- BENEFICIOS -->
+
+<section class="beneficios">
+
+<h2>Beneficios para la empresa</h2>
+
+<div class="beneficios-grid">
+
+<div>⚡ Mejora de la eficiencia operativa</div>
+<div>🛠 Reducción de fallas en equipos</div>
+<div>📈 Optimización de procesos</div>
+<div>👷 Desarrollo técnico del personal</div>
+<div>🏭 Capacitación adaptada a la empresa</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>Capacitación Técnica Industrial</p>
+<p>Misiones - Argentina</p>
+<p>WhatsApp: 3743-553489</p>
+
+</footer>
+
+<!-- BOTON WHATSAPP -->
+
+<a href="https://wa.me/543743553489" class="whatsapp" target="_blank">
+💬
+</a>
 
 <script src="script.js"></script>
 

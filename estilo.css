@@ -1,338 +1,155 @@
-/* ================================================= */
-/* ESTILO GENERAL DEL SITIO */
-/* ================================================= */
-
 body{
-
-font-family:Arial, sans-serif;
-
+font-family: Arial, sans-serif;
 margin:0;
-
 background:#f4f4f4;
-
-color:#333;
-
 }
 
-
-
-/* ================================================= */
-/* SECCION PORTADA */
-/* ================================================= */
+/* HERO */
 
 .hero{
-
+background:url("img/portada.jpg") center/cover no-repeat;
 height:90vh;
-
-/* IMAGEN DE FONDO */
-
-background:url("img/portada.jpg") center/cover;
-
 display:flex;
-
 align-items:center;
-
 justify-content:center;
-
 text-align:center;
-
 color:white;
-
 }
-
-/* CAJA OSCURA PARA MEJORAR LECTURA */
 
 .hero-contenido{
-
 background:rgba(0,0,0,0.6);
-
 padding:40px;
-
-border-radius:8px;
-
-max-width:600px;
-
+border-radius:10px;
 }
 
-/* TITULO PRINCIPAL */
-
-.hero h1{
-
-font-size:48px;
-
-margin-bottom:20px;
-
+.boton{
+background:#ff6600;
+color:white;
+padding:12px 20px;
+text-decoration:none;
+border-radius:6px;
+display:inline-block;
+margin-top:15px;
 }
 
+/* SERVICIO */
 
-
-/* ================================================= */
-/* SECCIONES GENERALES */
-/* ================================================= */
-
-section{
-
-padding:70px 10%;
-
+.servicio{
+padding:60px 20px;
+text-align:center;
+background:white;
 }
 
-h2{
+/* AREAS */
 
-color:#1f3c88;
-
-margin-bottom:20px;
-
+.areas{
+padding:60px 20px;
+text-align:center;
 }
 
-
-
-/* ================================================= */
-/* CONTENEDOR DE TARJETAS */
-/* ================================================= */
-
-.contenedor-tarjetas{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-
-gap:25px;
-
-margin-bottom:40px;
-
+.tarjetas{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+margin-top:30px;
 }
-
-
-
-/* ================================================= */
-/* TARJETAS DE CAPACITACIONES */
-/* ================================================= */
 
 .tarjeta{
-
 background:white;
-
+width:280px;
 border-radius:10px;
-
 overflow:hidden;
-
 box-shadow:0 5px 15px rgba(0,0,0,0.1);
-
-transition:0.3s;
-
 cursor:pointer;
-
-position:relative;
-
+transition:0.3s;
 }
-
-/* EFECTO HOVER */
 
 .tarjeta:hover{
-
-transform:translateY(-8px);
-
-box-shadow:0 10px 25px rgba(0,0,0,0.2);
-
+transform:translateY(-5px);
 }
-
-/* ================================= */
-/* TARJETA ACTIVA (DESTACADA) */
-/* Cuando está en el centro de pantalla */
-/* ================================= */
-
-.tarjeta.activa{
-
-transform:scale(1.04);   /* hace que crezca un poco */
-
-border:2px solid #2ecc71; /* borde verde */
-
-box-shadow:0 12px 30px rgba(0,0,0,0.25); /* sombra más fuerte */
-
-}
-
-
-
-/* IMAGEN DE LA TARJETA */
 
 .tarjeta img{
-
 width:100%;
-
-height:170px;
-
+height:180px;
 object-fit:cover;
-
 }
 
-
-
-/* TITULO DEL CURSO */
-
-.tarjeta h4{
-
-padding:15px;
-
-color:#1f3c88;
-
+.tarjeta h3{
+margin:15px;
 }
 
-
-
-/* INFORMACION OCULTA (APARECE EN HOVER) */
-
-.info{
-
-position:absolute;
-
-bottom:0;
-
-background:rgba(0,0,0,0.85);
-
-color:white;
-
-width:100%;
-
-padding:15px;
-
-transform:translateY(100%);
-
-transition:0.4s;
-
+.tarjeta p{
+margin:0 15px 20px;
 }
 
-/* EFECTO AL PASAR EL MOUSE */
+/* CURSOS */
 
-.tarjeta.activa .info{
-
-transform:translateY(0);
-
-}
-
-
-
-/* ================================================= */
-/* BENEFICIOS */
-/* ================================================= */
-
-.beneficios ul{
-
-line-height:2;
-
-font-size:18px;
-
-}
-
-
-
-/* ================================================= */
-/* MODAL */
-/* ================================================= */
-
-.modal{
-
-display:none;
-
-position:fixed;
-
-top:0;
-
-left:0;
-
-width:100%;
-
-height:100%;
-
-background:rgba(0,0,0,0.7);
-
-align-items:center;
-
+.cursos{
+padding:60px 20px;
+display:flex;
+flex-wrap:wrap;
 justify-content:center;
-
+gap:25px;
 }
 
-/* CONTENIDO DEL MODAL */
-
-.modal-contenido{
-
+.curso{
 background:white;
-
-padding:40px;
-
-max-width:500px;
-
-border-radius:8px;
-
-position:relative;
-
+width:260px;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
 }
 
-/* BOTON CERRAR */
-
-.cerrar{
-
-position:absolute;
-
-top:10px;
-
-right:20px;
-
-font-size:28px;
-
-cursor:pointer;
-
+.curso img{
+width:100%;
+height:160px;
+object-fit:cover;
 }
 
+.curso h4{
+margin:10px;
+}
 
+.curso p{
+margin:10px;
+font-size:14px;
+}
 
-/* ================================================= */
-/* BOTON WHATSAPP */
-/* ================================================= */
+/* BENEFICIOS */
+
+.beneficios{
+background:#e9eef3;
+padding:60px 20px;
+text-align:center;
+}
+
+.beneficios-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+margin-top:30px;
+}
+
+/* FOOTER */
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+/* WHATSAPP */
 
 .whatsapp{
-
 position:fixed;
-
 bottom:20px;
-
 right:20px;
-
 background:#25D366;
-
 color:white;
-
-padding:15px 20px;
-
-border-radius:50px;
-
+font-size:28px;
+padding:15px;
+border-radius:50%;
 text-decoration:none;
-
-font-weight:bold;
-
-box-shadow:0 5px 15px rgba(0,0,0,0.3);
-
-}
-
-
-
-/* ================================================= */
-/* ANIMACION AL HACER SCROLL */
-/* ================================================= */
-
-.aparecer{
-
-opacity:0;
-
-transform:translateY(40px);
-
-transition:1s;
-
-}
-
-.aparecer.visible{
-
-opacity:1;
-
-transform:translateY(0);
-
 }

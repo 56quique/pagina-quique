@@ -290,3 +290,50 @@ font-size:40px;
 color:#2c7be5;
 margin-bottom:15px;
 }
+/* MODALIDAD */
+
+.modalidad{
+padding:70px 20px;
+background:#f4f6f9;
+text-align:center;
+}
+
+.modalidad h2{
+margin-bottom:40px;
+}
+
+.modalidad-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+max-width:1000px;
+margin:auto;
+}
+
+.paso{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.paso:hover{
+transform:translateY(-6px);
+box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+
+.icono-modalidad{
+font-size:36px;
+color:#ff6600;
+margin-bottom:15px;
+}
+
+.paso h3{
+margin-bottom:10px;
+}
+
+.paso p{
+font-size:14px;
+color:#555;
+}

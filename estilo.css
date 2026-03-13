@@ -191,12 +191,19 @@ position:fixed;
 bottom:25px;
 right:25px;
 background:#25D366;
-color:white;
-font-size:28px;
-padding:16px;
+padding:14px;
 border-radius:50%;
-text-decoration:none;
-box-shadow:0 5px 15px rgba(0,0,0,0.3);
+box-shadow:0 6px 18px rgba(0,0,0,0.3);
+transition:0.3s;
+}
+
+.whatsapp img{
+width:32px;
+height:32px;
+}
+
+.whatsapp:hover{
+transform:scale(1.15);
 }
 
 .titulo-cursos{

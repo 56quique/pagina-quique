@@ -1,7 +1,12 @@
-body{
-font-family: Arial, sans-serif;
+*{
 margin:0;
-background:#f4f4f4;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#f4f6f9;
 }
 
 /* HERO */
@@ -12,66 +17,91 @@ height:90vh;
 display:flex;
 align-items:center;
 justify-content:center;
+position:relative;
 text-align:center;
 color:white;
 }
 
-.hero-contenido{
+.overlay{
+position:absolute;
+width:100%;
+height:100%;
 background:rgba(0,0,0,0.6);
-padding:40px;
-border-radius:10px;
+}
+
+.hero-contenido{
+position:relative;
+max-width:700px;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:18px;
+margin-bottom:30px;
 }
 
 .boton{
 background:#ff6600;
-color:white;
-padding:12px 20px;
-text-decoration:none;
+padding:14px 25px;
 border-radius:6px;
-display:inline-block;
-margin-top:15px;
+text-decoration:none;
+color:white;
+font-weight:bold;
+transition:0.3s;
+}
+
+.boton:hover{
+background:#e05500;
 }
 
 /* SERVICIO */
 
 .servicio{
-padding:60px 20px;
+padding:70px 20px;
 text-align:center;
 background:white;
+}
+
+.servicio h2{
+margin-bottom:20px;
 }
 
 /* AREAS */
 
 .areas{
-padding:60px 20px;
+padding:70px 20px;
 text-align:center;
 }
 
 .tarjetas{
+margin-top:40px;
 display:flex;
 flex-wrap:wrap;
-justify-content:center;
 gap:30px;
-margin-top:30px;
+justify-content:center;
 }
 
 .tarjeta{
+width:300px;
 background:white;
-width:280px;
 border-radius:10px;
 overflow:hidden;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
+box-shadow:0 6px 18px rgba(0,0,0,0.1);
 cursor:pointer;
 transition:0.3s;
 }
 
 .tarjeta:hover{
-transform:translateY(-5px);
+transform:translateY(-8px);
 }
 
 .tarjeta img{
 width:100%;
-height:180px;
+height:200px;
 object-fit:cover;
 }
 
@@ -81,6 +111,7 @@ margin:15px;
 
 .tarjeta p{
 margin:0 15px 20px;
+color:#555;
 }
 
 /* CURSOS */
@@ -89,16 +120,21 @@ margin:0 15px 20px;
 padding:60px 20px;
 display:flex;
 flex-wrap:wrap;
-justify-content:center;
 gap:25px;
+justify-content:center;
 }
 
 .curso{
-background:white;
 width:260px;
+background:white;
 border-radius:10px;
 overflow:hidden;
-box-shadow:0 4px 12px rgba(0,0,0,0.1);
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.curso:hover{
+transform:scale(1.03);
 }
 
 .curso img{
@@ -114,42 +150,51 @@ margin:10px;
 .curso p{
 margin:10px;
 font-size:14px;
+color:#555;
 }
 
 /* BENEFICIOS */
 
 .beneficios{
-background:#e9eef3;
-padding:60px 20px;
+background:#e9edf2;
+padding:70px 20px;
 text-align:center;
 }
 
 .beneficios-grid{
+margin-top:40px;
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:20px;
-margin-top:30px;
+gap:25px;
+}
+
+.beneficio{
+background:white;
+padding:20px;
+border-radius:8px;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
 }
 
 /* FOOTER */
 
 footer{
-background:#222;
+background:#1c1c1c;
 color:white;
 text-align:center;
-padding:30px;
+padding:40px 20px;
 }
 
 /* WHATSAPP */
 
 .whatsapp{
 position:fixed;
-bottom:20px;
-right:20px;
+bottom:25px;
+right:25px;
 background:#25D366;
 color:white;
 font-size:28px;
-padding:15px;
+padding:16px;
 border-radius:50%;
 text-decoration:none;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
 }

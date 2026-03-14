@@ -2,7 +2,7 @@ const capacitaciones = {
 
 A:[
 {
-titulo:"Electricidad Industrial Básica",
+titulo:"Fundamentos de Electricidad Industrial",
 imagen:"img/curso1.jpg",
 descripcion:"Principios fundamentales de instalaciones eléctricas industriales.",
 duracion:"Duración: 8 horas",

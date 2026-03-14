@@ -159,9 +159,9 @@ const contenedor = document.getElementById("cursos");
 
 let tituloArea = "";
 
-if(area === "A") tituloArea = "Capacitaciones Fundamentales";
-if(area === "B") tituloArea = "Capacitaciones Transversales";
-if(area === "C") tituloArea = "Capacitaciones Especiales";
+if(area === "A") tituloArea = "Tecnologias Indsutriales";
+if(area === "B") tituloArea = "Integración de Sistemas";
+if(area === "C") tituloArea = "Diagnóstico y Optimización";
 
 contenedor.innerHTML = `<h2 class="titulo-cursos">${tituloArea}</h2>`;
 

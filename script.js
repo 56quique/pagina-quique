@@ -159,7 +159,7 @@ const contenedor = document.getElementById("cursos");
 
 let tituloArea = "";
 
-if(area === "A") tituloArea = "Sistemas electricos industriales";
+if(area === "A") tituloArea = "Electricidad Industrial";
 if(area === "B") tituloArea = "Sistemas mecánicos industriales";
 if(area === "C") tituloArea = "Instrumentación y control";
 

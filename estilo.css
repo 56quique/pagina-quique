@@ -7,6 +7,10 @@ flex-wrap:wrap;
 margin-top:25px;
 width:100%;
 }
+.hero-botones .boton{
+display:inline-block;
+text-align:center;
+}
 html{
 scroll-behavior:smooth;
 }
